@@ -29,7 +29,7 @@ function procesar(asiento) {
              }
               </script>
     <?php
- include 'claes/bd.php';
+ include 'clases/bd.php';
  conmysql();
  //consulta();
 
@@ -151,7 +151,7 @@ for($i=21; $i<26 ; $i++){
 </div>
 
 <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-3 col-form-label">total puestos</label>
+    <label for="inputEmail3" class="col-sm-3 col-form-label">Asiento</label>
     <div class="col-sm-9">
       <input name="totalPuesto" class="form-control" id="totalPuesto" placeholder="Total puesto">
     </div>
