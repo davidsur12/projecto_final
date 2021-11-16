@@ -1,0 +1,103 @@
+
+body{
+
+    background: #2980B9;
+}
+.padre {
+  
+    background: #2980B9;
+  }
+
+  .boton0 {
+    background-color: #000080; 
+    padding :14px;
+    border-radius: 10px;
+    color:aliceblue;
+    margin-left: 50px;
+ 
+
+    
+    
+
+   
+
+    }
+.boton1 {
+    background-color: #000080;
+  
+    padding :14px;
+    border-radius: 10px;
+    color:aliceblue;
+    margin: 10px;
+    margin-left: 40px;
+    text-decoration:none;
+   
+
+    }
+    .boton2 {
+        background-color: #000080;
+      
+        padding :13px;
+        border-radius: 10px;
+        color:aliceblue;
+        margin-left: 40px;
+        text-decoration:none;
+       
+       
+    
+        }
+    .boton3 {
+        background-color: #000080;
+      
+        padding :10px;
+        border-radius: 10px;
+        color:aliceblue;
+        text-decoration:none;
+       
+       
+    
+        }
+    .bus{
+        
+  width: 20%;
+  
+  justify-content: left;
+  justify-content: top;
+  margin-left: 200px;
+      
+    }
+
+.fila2{
+
+
+
+}
+.formulario{
+    margin-top: 150px;
+ margin-right: 200px;
+    position:absolute;
+    top:0;
+    right:0;
+
+
+}
+h1 {
+    color: #6c2eb9;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: Arial;
+    text-transform: uppercase;
+  }
+
+
+/*
+border: 1px solid #2e518b; anchura, estilo y color borde
+padding: 10px; espacio alrededor texto
+background-color: #2e518b;  botón
+color: #ffffff; color texto
+text-decoration: none; decoración texto
+text-transform: uppercase; capitalización texto
+font-family: 'Helvetica', sans-serif; tipografía texto
+border-radius: 50px; bordes redondos
+    
+    */
