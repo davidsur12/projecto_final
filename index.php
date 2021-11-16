@@ -37,8 +37,11 @@ function procesar(asiento) {
  ?>
   </head>
   <body >
+    <br>
+    <br>
+    
     <center>
-    <h1>venta de tickets</h1>
+    <h1 class="titulo">venta de tickets</h1>
             </center>
             <br>
 
@@ -98,6 +101,7 @@ for($i=21; $i<26 ; $i++){
 <br>
 <br>
 <div class="formulario">
+  <h2>INGRESA LA INFORMACION</h2>
 <form name="formulario" action="index.php" method="POST" width=20px >
   <div class="form-group row">
     <label for="inputEmail3" class="col-sm-3 col-form-label">Nombre</label>
@@ -156,8 +160,11 @@ for($i=21; $i<26 ; $i++){
       <input name="totalPuesto" class="form-control" id="totalPuesto" placeholder="Total puesto">
     </div>
   </div>
+  <br>
 <center>
-  <p><button type="button" onclick="pregunta()">imprimir</button></p>
+ 
+  <p><button class="boton_enviar" type="button" onclick="pregunta()">imprimir</button></p>
+<
 </center>
 </form>
 
@@ -261,7 +268,7 @@ precio="20.000";
           precio="18.000";
           break;
 }
-
+//validacio 
 if(puesto.value!=""){
 
   var info="\n" + "Nombre : " + nombre.value + "\n" +
@@ -279,37 +286,43 @@ else{
 </script>
 
 
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline"  action="index.php" method="POST" >
+
+
+  <form class="f2"  action="index.php" method="POST">
+  <center><p class="txtf2">BUSQUEDA POR ID</p></center>
     <input class="form-control mr-sm-2" type="search" placeholder="Buscar por id" aria-label="Search" name="ticket">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+   <center> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button></center>
+
+  </form>
+</nav>
+
+
+
+
+  <form class="f2"  action="index.php" method="POST" >
+  <center><p class="txtf2">BUSQUEDA POR DOCUMENTO</p></center>
+  <input class="form-control mr-sm-2" type="search" placeholder="Buscar por documento" aria-label="Search" name="searchdocumeto">
+    <center><button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button></center>
 
   </form>
 
-</nav>
+  
 
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline"  action="index.php" method="POST" >
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar por documento" aria-label="Search" name="searchdocumeto">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-
-  </form>
-
-</nav>
+<br>
 <?php
 
 //consulta de ticket por id
 if( (isset($_POST['ticket']) && !empty($_POST['ticket']))){
 
   $ticket = $_POST['ticket'];
-  echo($ticket);
+  //echo($ticket);
   consulta($ticket);
 
 }
 if( (isset($_POST['searchdocumeto']) && !empty($_POST['searchdocumeto']))){
 
   $ticket = $_POST['searchdocumeto'];
-  echo($ticket);
+ // echo($ticket);
   consulta2($ticket);
 
 }

@@ -54,6 +54,7 @@ function consulta($id){
     {
         echo "No se ha podido realizar la consulta";
     }
+    
     echo("<div class='tablee'>");
     echo "<table border='1' class='table table-bordered table-dark'>";
 
